@@ -1,0 +1,21 @@
+{
+  "name": "MQTT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mqtt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mqtt": "^2.5.0",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

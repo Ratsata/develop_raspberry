@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT</title>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body  BGCOLOR="black">
+<FONT COLOR="white">
+    <h1><center>Comunicación bidireccional con ESP8266</center></h1>
+    <input type="checkbox" id="check">
+    <input type="checkbox" id="valueSliderr">dale
+    <label for="check">LED1</label>
+    <p id="hello"></p>
+    <p id="estado"></p>
+    <p>
+    Número de conexiones activas: <b id="conexions"></b>
+    </p>
+    
+    <center>
+       
+
+            <h2>Velocidad Motor</h2>
+
+            <div class='slider'>
+                <div class='emptyprogress'></div>
+                <div class='progress'></div>
+                <div class='indicator'></div>
+            </div>
+
+            <div class='info'>
+                <label>
+                    Porcentaje: 
+                    <input type="text" id="valueSlider" value="0" />
+                    <input type="button" id="botonEnviar" value="Enviar" hidden>
+                </label>
+            </div>
+    </center>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--<script src="./graph.js"></script>-->
+</FONT>
+</body>
+</html>
